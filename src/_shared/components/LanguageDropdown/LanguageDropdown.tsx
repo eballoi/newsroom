@@ -18,7 +18,7 @@ export const LanguageDropdown = () => {
 	};
 
 	return (
-		<div className="relative border-l pl-4">
+		<div className="relative border-l pl-1 md:pl-4">
 			<button
 				className="flex items-center gap-2 px-4 py-2 rounded-full hover:bg-gray-100"
 				onClick={() => setIsOpen(!isOpen)}
