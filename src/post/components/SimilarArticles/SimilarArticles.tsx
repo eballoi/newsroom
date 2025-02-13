@@ -3,6 +3,7 @@ import { Text } from "@/_shared/components/Text";
 import { useTranslation } from "next-i18next";
 import { FC } from "react";
 import { ArticleGridProps } from "./types";
+import clsx from "clsx";
 
 export const SimilarArticles: FC<ArticleGridProps> = ({ posts }) => {
 	const { t } = useTranslation("post");
@@ -12,14 +13,22 @@ export const SimilarArticles: FC<ArticleGridProps> = ({ posts }) => {
 				<Text variant="p1">{t("similarArticles")}</Text>
 			</div>
 			<div className="w-full overflow-hidden overflow-x-scroll flex space-x-4 animate-marquee py-12">
-				{posts.map((post) => (
-					<div
-						key={post.id}
-						className="flex-shrink-0 w-2/3 sm:w-1/2 lg:w-1/4 mx-8"
-					>
-						<Card key={post.id} post={post} variant="small" />
-					</div>
-				))}
+				{posts.map((post, index) => {
+					const isFirst = index === 0;
+					const isLast = index === posts.length - 1;
+					return (
+						<div
+							key={post.id}
+							className={clsx(
+								"flex-shrink-0 w-[80%] sm:w-[60%] md:w-[50%] lg:w-[33%] xl:w-[25%] snap-start",
+								isFirst && "ml-8",
+								isLast && "mr-8"
+							)}
+						>
+							<Card key={post.id} post={post} variant="small" />
+						</div>
+					);
+				})}
 			</div>
 		</div>
 	);

@@ -11,7 +11,7 @@ export const CardFooter: FC<{ post: Post }> = ({ post }) => {
 		<div className="flex justify-between items-center mt-auto relative">
 			<div className="flex items-center space-x-2">
 				<AvatarPlaceholder name={post.author.name} />
-				<span className="font-medium">{post.author.name}</span>
+				<span className="hidden lg:block font-medium">{post.author.name}</span>
 			</div>
 			<Link href={`/post/${post.id}`} className="group">
 				<div className="inline-flex items-center uppercase hover:underline transition-transform duration-300 group-hover:translate-x-1">
