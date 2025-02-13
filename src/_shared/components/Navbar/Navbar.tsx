@@ -32,7 +32,7 @@ export const Navbar: FC = () => {
 				<Link href={routes.HOME} className="text-xl font-bold">
 					{t("appName")}
 				</Link>
-				<div className="flex space-x-8 items-center">
+				<div className="flex space-x-1 md:space-x-8 items-center">
 					{navLinks.map((navLink) => (
 						<NavLink
 							key={navLink.text}
