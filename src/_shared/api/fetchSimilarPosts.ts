@@ -7,7 +7,7 @@ export const fetchSimilarPosts = async () => {
 
 	const posts: Post[] = await res.json();
 
-	return posts.map((post) => ({
+	return posts.slice(0, 10).map((post) => ({
 		...post,
 		hashtags: getHashtagsForPost(post.id, post.userId),
 	}));

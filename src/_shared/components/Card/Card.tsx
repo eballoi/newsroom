@@ -12,8 +12,10 @@ export const Card: FC<CardProps> = ({
 	const handleToggle = (tag: string) => toggleHashtag && toggleHashtag(tag);
 	return (
 		<article
-			className={`p-6 text-white ${
-				variant === "small" ? "aspect-[6/5]" : "aspect-[5/6]"
+			className={`p-6 text-white min-h-[350] md:min-h-[200] ${
+				variant === "small"
+					? "sm:aspect-[1/1] md:aspect-[6/5] lg:aspect-[4/5]"
+					: "sm:aspect-[1/1] md:aspect-[5/6] lg:aspect-[4/6] xl:aspect-[5/6]"
 			} rounded-2xl overflow-hidden hover:shadow-md h-full bg-card-gradient`}
 		>
 			<div className="flex flex-col justify-between h-full relative">
