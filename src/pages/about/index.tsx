@@ -25,7 +25,7 @@ export default function About() {
 	);
 }
 
-export async function getStaticProps({ locale = "en" }: { locale: string }) {
+export async function getStaticProps({ locale }: { locale: string }) {
 	return {
 		props: {
 			...(await serverSideTranslations(locale, ["common", "about"])),
