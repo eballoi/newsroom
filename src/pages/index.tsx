@@ -43,17 +43,14 @@ export default function Home({ posts }: HomeProps) {
 	);
 }
 
-export const getStaticProps: GetStaticProps<HomeProps> = async ({
-	locale = "en",
-}) => {
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
 	const posts = await fetchAllPosts();
 	const users = await fetchUsers();
-	const translations = await serverSideTranslations(locale, ["common", "home"]);
 
 	return {
 		props: {
 			posts: posts.map((post) => ({ ...post, author: users[post.userId - 1] })),
-			...translations,
+			...(await serverSideTranslations(locale ?? "", ["common", "home"])),
 		},
 		revalidate: 60,
 	};

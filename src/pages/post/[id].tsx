@@ -60,10 +60,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 	return { paths, fallback: "blocking" };
 };
 
-export const getStaticProps: GetStaticProps = async ({
-	params,
-	locale = "en",
-}) => {
+export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
 	if (!params?.id) return { notFound: true };
 
 	try {
@@ -72,13 +69,10 @@ export const getStaticProps: GetStaticProps = async ({
 		const similarPosts = await fetchSimilarPosts();
 		const featuredPosts = await fetchFeaturedPosts();
 		const users = await fetchUsers();
-		const translations = await serverSideTranslations(locale, [
-			"common",
-			"post",
-		]);
+
 		return {
 			props: {
-				...translations,
+				...(await serverSideTranslations(locale ?? "en", ["common", "post"])),
 				post,
 				author,
 				featuredPosts,

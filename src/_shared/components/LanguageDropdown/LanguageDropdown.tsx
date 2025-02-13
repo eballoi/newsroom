@@ -3,13 +3,17 @@ import { useState } from "react";
 import { LanguageDropdownItem } from "./LanguageDropdownItem";
 import { Languages } from "./constants";
 import { getFlag } from "./utils";
+import { useRouter } from "next/router";
 
 export const LanguageDropdown = () => {
 	const { t, i18n } = useTranslation("common");
+	const router = useRouter();
 	const [isOpen, setIsOpen] = useState(false);
 
 	const handleLanguageChange = (lang: string) => {
+		const { pathname, asPath, query } = router;
 		i18n.changeLanguage(lang);
+		router.push({ pathname, query }, asPath, { locale: lang });
 		setIsOpen(false);
 	};
 
