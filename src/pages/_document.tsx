@@ -12,34 +12,34 @@ export default function Document() {
 				{/* SEO Meta Tags */}
 				<meta
 					name="description"
-					content="Your website description goes here."
+					content="Newsroom is a responsive blog platform built with Next.js, TypeScript, and Tailwind CSS. 🚀📖"
 				/>
 				<meta name="keywords" content="nextjs, seo, web development, react" />
-				<meta name="author" content="Your Name" />
+				<meta name="author" content="Edoardo Balloi" />
 
 				{/* Open Graph (OG) for Social Media Preview */}
-				<meta property="og:title" content="Your Website Title" />
+				<meta property="og:title" content="Newsroom" />
 				<meta
 					property="og:description"
-					content="Your website description goes here."
+					content="Newsroom is a responsive blog platform built with Next.js, TypeScript, and Tailwind CSS. 🚀📖."
 				/>
 				<meta
 					property="og:image"
-					content="https://yourwebsite.com/preview.jpg"
+					content="https://raw.githubusercontent.com/eballoi/newsroom/main/public/preview.png"
 				/>
 				<meta property="og:url" content="https://yourwebsite.com" />
 				<meta property="og:type" content="website" />
 
 				{/* Twitter Card for Twitter/X Preview */}
 				<meta name="twitter:card" content="summary_large_image" />
-				<meta name="twitter:title" content="Your Website Title" />
+				<meta name="twitter:title" content="Newsroom" />
 				<meta
 					name="twitter:description"
-					content="Your website description goes here."
+					content="Newsroom is a responsive blog platform built with Next.js, TypeScript, and Tailwind CSS. 🚀📖."
 				/>
 				<meta
 					name="twitter:image"
-					content="https://yourwebsite.com/preview.jpg"
+					content="https://raw.githubusercontent.com/eballoi/newsroom/main/public/preview.png"
 				/>
 
 				{/* Favicon */}
