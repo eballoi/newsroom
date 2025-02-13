@@ -1,8 +1,8 @@
 # **Newsroom** 🚀
 
-Welcome to **Newsroom**! This is a simple, responsive blog app built with Next.js, TypeScript, and Tailwind CSS. The app fetches blog data from the **JSONPlaceholder API** and presents it with some awesome extra features like language switching, hashtag filtering, and a dynamic post details page.
+Welcome to **Newsroom**! This is a simple, responsive blog app built with Next.js, TypeScript, and Tailwind CSS. The app fetches blog data from the **JSONPlaceholder API** and presents it with some awesome extra features like language switching, hashtag filtering, and a rich UI post details page.
 
----
+## ![Preview](https://raw.githubusercontent.com/eballoi/newsroom/main/public/preview.png)
 
 ## **Installation & Setup ⚡**
 
@@ -57,9 +57,9 @@ Clone the repository and follow these steps:
 - Clicking on a hashtag will filter posts and display only those matching the selected tags.
 - This feature helps to **precisely filter content** without the need for full title searches.
 
-### **4. Language Switcher 🌐**
+### 4. **Language Switcher 🌐**
 
-- Leveragin `next-i18next` I've included a **language switcher** to toggle between different languages for a more personalized user experience. (Supports **English**, **Deutsch** and **Italian**).
+- Using `next-i18next`, a language switcher has been implemented to toggle between English, Deutsch, and Italian for a more personalized user experience. Localization is handled server-side, ensuring fast and seamless language switching across the entire app.
 
 ### **5. Load More Button** 🔥
 
