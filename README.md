@@ -12,7 +12,7 @@ Clone the repository and follow these steps:
 
    ```bash
    git clone https://github.com/eballoi/newsroom.git
-   cd fe-newsroom
+   cd newsroom
    ```
 
 2. Install dependencies:
