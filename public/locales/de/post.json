@@ -1,0 +1,9 @@
+{
+	"seo": {
+		"title": "Newsroom - {{title}}",
+		"description": "Bleiben Sie auf dem neuesten Stand mit fundierten Analysen und den neuesten Einblicken zu aktuellen Themen, kuratiert von unseren Expertenautoren."
+	},
+	"featuredTitle": "Von diesem Autor",
+	"readMore": "Mehr lesen →",
+	"similarArticles": "Ähnliche Artikel"
+}

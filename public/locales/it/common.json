@@ -1,0 +1,17 @@
+{
+	"appName": "Newsroom",
+	"navbar": {
+		"home": "Home",
+		"about": "Chi siamo"
+	},
+	"components": {
+		"card": {
+			"readMore": "Leggi di più →"
+		}
+	},
+	"languages": {
+		"en": "🇬🇧 Ingles",
+		"de": "🇩🇪 Tedesco",
+		"it": "🇮🇹 Italiano"
+	}
+}

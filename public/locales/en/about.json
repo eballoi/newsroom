@@ -1,0 +1,17 @@
+{
+	"seo": {
+		"title": "Newsroom - About",
+		"description": "Learn more about Newsroom, your go-to source for up-to-date, reliable, and insightful news. Explore trending topics with hashtag filtering, discover localized content, and engage with personalized recommendations."
+	},
+	"title": "About Our Newsroom",
+	"description": "Welcome to our newsroom! We are dedicated to delivering up-to-date, reliable, and insightful news from various domains, including politics, technology, health, and culture. Our goal is to keep you informed and engaged with the latest happenings from around the world.",
+	"hashtagTitle": "Hashtag Filtering",
+	"hashtagDescription": "Easily discover and explore news based on relevant hashtags. Filter content by specific topics or themes that interest you, making it easier to follow breaking news in real-time. Whether you're looking for the latest in politics, technology, or entertainment, our hashtag filtering keeps you connected to what's trending.",
+	"localizationTitle": "Localization",
+	"localizationDescription": "Our newsroom is tailored to provide localized content, ensuring that you receive news that matters most to you. Whether you're looking for regional stories or global updates, we support multiple languages and regional preferences, bringing you news that resonates with your location and interests.",
+	"suggestedContentTitle": "Suggested Content",
+	"suggestedContentDescription": "Discover more relevant articles with our suggested content feature. This includes a curated list of featured authors' blog posts, along with a carousel of similar posts tailored to your reading habits. We aim to connect you to the most insightful, engaging, and related content, keeping you informed and entertained.",
+	"socialSharingTitle": "Social Sharing",
+	"socialSharingDescription": "Share the latest articles and breaking news with your friends and followers across social media. Our platform makes it easy to spread important stories via WhatsApp, Facebook, Twitter, and other platforms, keeping your network informed with just a click.",
+	"backCta": "Back to Home"
+}

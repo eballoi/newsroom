@@ -1,40 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# **Newsroom** 🚀
 
-## Getting Started
+Welcome to **Newsroom**! This is a simple, responsive blog app built with Next.js, TypeScript, and Tailwind CSS. The app fetches blog data from the **JSONPlaceholder API** and presents it with some awesome extra features like language switching, hashtag filtering, and a dynamic post details page.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## **Installation & Setup ⚡**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Clone the repository and follow these steps:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. Clone the repo:
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+   ```bash
+   git clone https://github.com/eballoi/newsroom.git
+   cd fe-newsroom
+   ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+2. Install dependencies:
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. Run the app locally:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## **Features ✨**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### **1. Homepage (/)**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- Fetches a list of blog posts using **`getStaticProps`** from the **[JSONPlaceholder API](https://jsonplaceholder.typicode.com/posts)**.
+- Displays a responsive grid layout with **Tailwind CSS**.
+- Each blog post card includes:
+  - Title (clickable link to the post’s details page).
+  - First 100 characters of the body for a preview.
+  - Author name with an avatar placeholder
+  - A **"Read More"** link directing users to the post detail page.
+
+### **2. Post Details Page (/post/[id])**
+
+- Dynamic routing for each post using **`getStaticPaths`** and **`getStaticProps`**.
+- Displays the full post details, including:
+  - Title
+  - Full body content
+- The post page is enriched with extra information like the **author bio** and a list of the author's **featured articles**.
+
+### **3. Hashtag Search & Filter**
+
+- Users can filter posts by hashtags (one or multiple).
+- Clicking on a hashtag will filter posts and display only those matching the selected tags.
+- This feature helps to **precisely filter content** without the need for full title searches.
+
+### **4. Language Switcher 🌐**
+
+- Leveragin `next-i18next` I've included a **language switcher** to toggle between different languages for a more personalized user experience. (Supports **English**, **Deutsch** and **Italian**).
+
+### **5. Load More Button** 🔥
+
+- On the homepage, a **"Load More"** button allows users to fetch additional posts in **chunks** for better performance and smoother browsing.
+
+### **6. Post Detail Enhancements**
+
+- On the post detail page:
+  - **Social Share CTAs**: Easily share the post via **email, WhatsApp**, or **copy the link**.
+  - **Author Bio**: Display detailed information about the author.
+  - **Featured Articles**: A list of other articles by the same author appears on the right.
+  - **Similar Posts**: Related posts are shown at the bottom of the page, encouraging users to explore more content.
+
+### **7. About Page (/about)**
+
+- A simple **About** page containing general information about the blog.
+
+### **8. Responsive Design 📱💻**
+
+- Fully responsive design built with **Tailwind CSS** ensuring the app looks great on **desktop, tablet, and mobile** devices.
+
+---
+
+## **Technologies Used 🛠️**
+
+- **Next.js** for server-side rendering and static site generation.
+- **TypeScript** for type safety and better development experience.
+- **Tailwind CSS** for responsive, utility-first styling.
+- **JSONPlaceholder API** to fetch blog posts and author data.
+
+---
+
+## **Folder Structure 🗂️**
+
+The project adopts a feature-based folder structure to organize components and logic around specific functionalities, such as posts, authors, and language switching. This approach enhances scalability and maintainability by keeping related files together, making it easier to locate and modify features independently as the project grows.
+
+---
+
+Feel free to explore and contribute! 🚀

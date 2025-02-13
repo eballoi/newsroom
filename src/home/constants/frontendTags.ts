@@ -1,0 +1,18 @@
+export const frontendTags = [
+	"#React",
+	"#NextJS",
+	"#TailwindCSS",
+	"#TypeScript",
+	"#JavaScript",
+	"#CSS",
+	"#HTML",
+	"#GraphQL",
+	"#Redux",
+	"#VueJS",
+	"#Svelte",
+	"#Webpack",
+	"#Vite",
+	"#NodeJS",
+	"#D3JS",
+	"#ThreeJS",
+];

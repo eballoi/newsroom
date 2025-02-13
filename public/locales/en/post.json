@@ -1,0 +1,9 @@
+{
+	"seo": {
+		"title": "Newsroom - {{title}}",
+		"description": "Stay updated with in-depth analysis and the latest insights on trending topics, curated by our expert authors."
+	},
+	"featuredTitle": "From this Author",
+	"readMore": "Read more →",
+	"similarArticles": "Similar Articles"
+}
