@@ -21,13 +21,19 @@ Clone the repository and follow these steps:
    npm install
    ```
 
-3. Run the app locally:
+3. Create a .env file on the project root including the `API_BASE_URL`
+
+   ```bash
+   API_BASE_URL=https://jsonplaceholder.typicode.com
+   ```
+
+4. Run the app locally:
 
    ```bash
    npm run dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
 ---
 
